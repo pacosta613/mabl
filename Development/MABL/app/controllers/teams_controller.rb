@@ -11,7 +11,6 @@ class TeamsController < ApplicationController
 
   get '/teams/:id' do 
     @teams = Team.find_by_id(params[:id])
-    @players = Player.find_by_id(params[:id])
     erb :'teams/show'
   end
 
