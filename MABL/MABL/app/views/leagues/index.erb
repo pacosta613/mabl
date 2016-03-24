@@ -1,0 +1,5 @@
+<% @leagues.each do |league| %>
+  <%= league.name %><br />
+  <a href="/leagues/<%=league.id%>/edit">Edit</a>
+  <br>
+<% end %>
